@@ -22,8 +22,8 @@ const data= [
     id: 2,
     image: IMG2,
     title: "Cross-Fit Website clone",
-    github: "https://github.com/Sherry-tech/Gammers.github.io",
-    demo: "https://sherry-tech.github.io/Gammers.github.io/"
+    github: "https://github.com/Sherry-tech/CrossFit.github.io",
+    demo: "https://sherry-tech.github.io/CrossFit.github.io/"
   },
 
   {
