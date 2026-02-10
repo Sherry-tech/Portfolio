@@ -11,36 +11,27 @@ const About = () => {
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className='container about__container'>
-
-
-
-        <div className="about__me">
-          <div className="about__me-image">
-          <img src={pic} alt="About Pic" />
-          </div> 
+        <div className="about__image glass">
+          <img src={pic} alt="About portrait" />
         </div>
 
-
-
-        <div className="about__content">
+        <div className="about__content glass glass--strong">
           <div className="about__cards">
-
             <article className="about__card">
               <FaAward className="about__icon"/>
                 <h5>Experience</h5>
-                <small>Fresh-Grad</small>
+                <small>4+ Years</small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon"/>
                 <h5>Clients</h5>
-                <small>10+ Clients</small>
+                <small>8+ Clients</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon"/>
                 <h5>Projects</h5>
-                <small>8+ complete</small>
+                <small>10+ complete</small>
             </article>
-
           </div>
 
           <p>
@@ -49,7 +40,6 @@ const About = () => {
             thinking that i get when writing code. Like to dicuss programs with people.
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
-
         </div>
       </div>
     </section>

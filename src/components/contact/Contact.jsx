@@ -23,33 +23,33 @@ const Contact = () => {
       <h5>Get in touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact_container">
-        <div className="contact_options">
+      <div className="container contact__container">
+        <div className="contact__options">
           
-          <article className="contact_option">
-            <MdOutlineEmail className="contact_option-icon"/>
+          <article className="contact__option glass">
+            <MdOutlineEmail className="contact__option-icon"/>
             <h4>Email</h4>
             <h5>sharyaralimujeeb1@gmail.com</h5>
-            <a href="mailto: sharyaralimujeeb1@gmail.com" target="_blank"> Send a message </a>
+            <a href="mailto: sharyaralimujeeb1@gmail.com" target="_blank" rel="noreferrer"> Send a message </a>
           </article>
 
-          <article className="contact_option">
-            <SiLinkedin className="contact_option-icon"/>
+          <article className="contact__option glass">
+            <SiLinkedin className="contact__option-icon"/>
             <h4>Linked-In</h4>
-            <h5>Sharyar Ali</h5>
-            <a href="https://www.linkedin.com/in/sharyar-ali-41b5b2157" target="_blank"> Get Linked </a>
+            <h5>Shaharyar Ali Mujeeb</h5>
+            <a href="https://www.linkedin.com/in/sharyar-ali-41b5b2157" target="_blank" rel="noreferrer"> Get Linked </a>
           </article>
 
-          <article className="contact_option">
-            <ImWhatsapp className="contact_option-icon"/>
+          <article className="contact__option glass">
+            <ImWhatsapp className="contact__option-icon"/>
             <h4>Whats-App</h4>
             <h5>03126358044</h5>
-            <a href="https://api.whatsapp.com/send?phone=03126358044" target="_blank"> Whatsapp Me </a>
+            <a href="https://api.whatsapp.com/send?phone=03126358044" target="_blank" rel="noreferrer"> Whatsapp Me </a>
           </article>
 
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} className="contact__form glass glass--strong">
 
             <input type="text" name="name" placeholder="Your Full Name" required/>
             <input type="email" name="email" placeholder="Your Email" required/>

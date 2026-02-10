@@ -7,10 +7,10 @@ import {BsTwitter} from 'react-icons/bs'
 
 const Footer = () => {
   return (
-    <footer>
-      <a href="#"  className="footer_logo">SharYar ALi</a>
+    <footer className="footer">
+      <a href="#"  className="footer__logo">Shaharyar Ali Mujeeb</a>
 
-      <ul className="permalinks">
+      <ul className="footer__links">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -19,15 +19,15 @@ const Footer = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <div className="footer_socials">
-          <a href="https://www.facebook.com/sharyar.ali.33886" target="_blank"> <FaFacebookF/> </a>
-          <a href="https://www.instagram.com/sharyar._.ali/" target="_blank"> <RiInstagramFill/> </a>
-          <a href="https://twitter.com/ShaharyarMujeeb" target="_blank"> <BsTwitter/> </a>
+      <div className="footer__socials">
+          <a href="https://www.facebook.com/sharyar.ali.33886" target="_blank" rel="noreferrer"> <FaFacebookF/> </a>
+          <a href="https://www.instagram.com/sharyar._.ali/" target="_blank" rel="noreferrer"> <RiInstagramFill/> </a>
+          <a href="https://twitter.com/ShaharyarMujeeb" target="_blank" rel="noreferrer"> <BsTwitter/> </a>
       </div>
 
 
-      <div className="footer_copyright">
-        <small>&copy; Sharyar Ali Mujeeb. All rights reversed.</small>
+      <div className="footer__copyright">
+        <small>&copy; Shaharyar Ali Mujeeb. All rights reversed.</small>
       </div>
 
     </footer>

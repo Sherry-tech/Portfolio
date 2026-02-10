@@ -11,9 +11,15 @@ import Footer from './components/footer/Footer'
 
 const App = () => {
   return (
-   <>
+   <div className="app">
+        <div className="app__bg" aria-hidden="true">
+          <span className="orb orb--a" />
+          <span className="orb orb--b" />
+          <span className="orb orb--c" />
+          <span className="grid-sheen" />
+        </div>
         <Header />
-        <Nav />
+        {/* <Nav /> */}
         <About />
         <Experience />
         <Services />
@@ -21,7 +27,7 @@ const App = () => {
         {/* <Testimonials /> */}
         <Contact />
         <Footer />
-   </>
+   </div>
   )
 }
 

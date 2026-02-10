@@ -10,9 +10,10 @@ const Services = () => {
       <div className="container services__container">
 
           {/* Email-Marketing */}
-        <article className='service'>
+        <article className='service glass'>
           <div className='service__head'>
             <h3>Email Marketing</h3>
+            <span className="service__tag">Growth systems</span>
           </div>
           <ul className='service__list'>
             <li>
@@ -40,9 +41,10 @@ const Services = () => {
 
 
          {/* Web-Development */}
-         <article className='service'>
+         <article className='service glass'>
           <div className='service__head'>
             <h3>Web Development</h3>
+            <span className="service__tag">Full stack build</span>
           </div>
           <ul className='service__list'>
             <li>
@@ -69,9 +71,10 @@ const Services = () => {
         </article>
 
         {/* Content-Creation */}
-        <article className='service'>
+        <article className='service glass'>
           <div className='service__head'>
             <h3>Content-Creation</h3>
+            <span className="service__tag">Brand presence</span>
           </div>
           <ul className='service__list'>
             <li>

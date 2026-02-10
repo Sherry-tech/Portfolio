@@ -1,82 +1,72 @@
-.container.contact_container{
-    width: 58%;
+.contact__container{
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 2rem;
 }
 
-
-.contact_options {
-    display: flex;
-    flex-direction: column;
+.contact__options{
+    display: grid;
     gap: 1.2rem;
 }
 
-.contact_option{
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
+.contact__option{
+    padding: 1.6rem;
+    border-radius: 1.6rem;
+    text-align: left;
+    border: 1px solid rgba(255,255,255,0.2);
     transition: var(--transition);
 }
 
-.contact_option:hover{
-    background: transparent;
-    border-color: var(--color-primary-variant);
-} 
-
-.contact_option-icon{
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+.contact__option:hover{
+    transform: translateY(-4px);
 }
 
-.contact_option-icon a{
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
+.contact__option-icon{
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+    color: var(--accent);
 }
 
+.contact__option a{
+    margin-top: 0.6rem;
+    display: inline-flex;
+    font-size: 0.85rem;
+    color: var(--accent-2);
+}
 
-
-
-/* ***************form************** */
-
-
-form{
+.contact__form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 
-input, textarea{
+.contact__form input,
+.contact__form textarea{
     width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    padding: 1rem 1.2rem;
+    border-radius: 0.9rem;
+    background: rgba(6, 9, 14, 0.6);
+    border: 1px solid rgba(255,255,255,0.18);
     resize: none;
-    color: var(--color-white);
+    color: var(--text);
+    font-family: inherit;
 }
 
+.contact__form input::placeholder,
+.contact__form textarea::placeholder{
+    color: rgba(233, 240, 250, 0.55);
+}
 
-
-/* =============== Media Queries (Medium Devices) ================*/
 @media screen and (max-width: 1024px) {
-
-    .container.contact_container {
+    .contact__container {
         grid-template-columns: 1fr;
-        gap: 2rem;
     }
+}
 
- }
- 
- 
- /* ========== Media Queries (Small Devices) ============= */
- @media screen and (max-width: 600px) {
-
-    .container.contact_container {
-        width: var(--color-width-sm);
+@media screen and (max-width: 600px) {
+    .contact__form{
+        padding: 1.6rem;
     }
- 
- }
+}
